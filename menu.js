@@ -115,9 +115,42 @@ const foodArr = [
     price: 18,
     category: "entree",
     popularuty: 5,
-    rating: 1,
+    rating: 2,
+    tags: ["Deep Dish"]
+    },
+    {
+    name: "Pizza Planet",
+    price: 11,
+    category: "entree",
+    popularuty: 1,
+    rating: 5,
     tags: ["meat lovers","Deep Dish"]
-    }
+    },
+    {
+    name: "little Ceasers",
+    price: 12,
+    category: "entree",
+    popularuty: 4,
+    rating: 4,
+    tags: ["Deep Dish","family"]
+    },
+    {
+    name: "Pizza Factory",
+    price: 13,
+    category: "entree",
+    popularuty: 2,
+    rating: 2,
+    tags: ["meat lovers","Deep Dish"]
+    },
+    {
+    name: "Pizza Town",
+    price: 14,
+    category: "entree",
+    popularuty: 3,
+    rating: 4,
+    tags: ["Take out", "Deep Dish","family"]
+     }
+
 ]
 
 
@@ -136,11 +169,15 @@ const foodArr = [
 
 //CODE HERE
 
- const filteredFood = foodArr.filter((elemnet) => {
-    return element.
- })
+ function callback(foodObj) {
+    return foodObj.tags.includes("meat lovers")
+ }
+
+ const filteredFood = foodArr.filter(callback)
 
  console.log(filteredFood)
+
+
 
 
 
@@ -184,6 +221,8 @@ const foodArr = [
 */
 
 //CODE HERE
+
+
 
 
 /*
