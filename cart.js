@@ -40,7 +40,7 @@ const cart = [
     return acc + curr.price
  }, 0)
 
- //console.log(summedPrice)
+ console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -63,7 +63,7 @@ const calcfinalPrice = (cartTotal, couponValue, tax) => {
     return (cartTotal * ( tax + 1)) - couponValue
 }
 
-//console.log(calcfinalPrice(100,5,.085))
+console.log(calcfinalPrice(100,5,.085))
 
 
 
