@@ -53,7 +53,7 @@ const pizza = {
 
 //CODE HERE
 
-//console.log(pizza.popularuty)
+console.log(pizza.popularuty)
 
 
 /*
@@ -65,7 +65,7 @@ const pizza = {
 
 //CODE HERE
 
-//console.log(pizza.tags[1])
+console.log(pizza.tags[1])
 
 
 /*
@@ -77,8 +77,8 @@ const pizza = {
 
 //CODE HERE
 
-//let {price} = pizza
-//console.log(price)
+let {price} = pizza
+console.log(price)
 
 
 /*
@@ -90,9 +90,9 @@ const pizza = {
 
 //CODE HERE
 
-// let {category} = pizza
+let {category} = pizza
 
-// console.log(category)
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -136,7 +136,11 @@ const foodArr = [
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+ const filteredFood = foodArr.filter((elemnet,index) => {
+    return elemnet.tags[0]
+ })
+
+ console.log(filteredFood)
 
 
 

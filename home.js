@@ -27,7 +27,7 @@ const greetUser = (username) => {
     return `Welcome back ${username}`
 }
 
-//console.log(greetUser("Scott"))
+console.log(greetUser("Scott"))
 
 
 
@@ -66,7 +66,7 @@ const canWeDeliver = (zipCode) => {
    }
 }
 
-//console.log(canWeDeliver(85205))
+console.log(canWeDeliver(85205))
 
   
 
@@ -99,7 +99,7 @@ const canWeDeliverTwo = (zipCode) => {
     }
 }
 
-//console.log(canWeDeliverTwo(85205))
+console.log(canWeDeliverTwo(85205))
 
 
 
@@ -139,7 +139,7 @@ const deals = [
 
 //CODE HERE
 
-const newDeal = deals
+const newDeal = deal.
 
 
 
