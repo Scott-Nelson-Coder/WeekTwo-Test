@@ -35,7 +35,12 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+
+ const summedPrice = cart.reduce((acc,curr) => {
+    return acc + curr.price
+ }, 0)
+
+ //console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,7 +58,12 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+//CODE HERE 
+const calcfinalPrice = (cartTotal, couponValue, tax) => {
+    return (cartTotal * ( tax + 1)) - couponValue
+}
+
+//console.log(calcfinalPrice(100,5,.085))
 
 
 
@@ -79,8 +89,10 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
-*/
+    In this section I will make a costomer object, I will have 4 properties
+    they will be name = string, age = Int, gender = sting, email = sting. 
+    I felt those data types were best to represent the information a company 
+    would want about one of their customers. 
 
 /*
     Now, create a customer object following your own
@@ -88,3 +100,10 @@ const cart = [
 */
 
 //CODE HERE
+
+const customer = {
+    name: "Scott",
+    age: 33,
+    gender: "Male",
+    email: "coolguy82@gmail.com"
+}
