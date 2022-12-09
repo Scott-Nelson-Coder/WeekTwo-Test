@@ -27,7 +27,7 @@ const greetUser = (username) => {
     return `Welcome back ${username}`
 }
 
-console.log(greetUser("Scott"))
+//console.log(greetUser("Scott"))
 
 
 
@@ -60,13 +60,12 @@ const canWeDeliver = (zipCode) => {
    for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
         if (zipCode === deliveryAreaZipCodes[i]) {
             return "We can deliver"
-        } else {
-            return "Unable to deliver"
-        }
+        } 
    }
+   return "Unable to deliver"
 }
 
-console.log(canWeDeliver(85205))
+console.log(canWeDeliver(85203))
 
   
 
@@ -94,9 +93,10 @@ console.log(canWeDeliver(85205))
 const canWeDeliverTwo = (zipCode) => {
     if (deliveryAreaZipCodes.includes(zipCode)) {
         return ("We can deliver")
-    } else {
-        return  ("Sorry can't deliver")
-    }
+    } 
+    
+    return  ("Sorry can't deliver")
+    
 }
 
 console.log(canWeDeliverTwo(85205))
@@ -139,7 +139,12 @@ const deals = [
 
 //CODE HERE
 
-const newDeal = deal.
+deals[0].title = deals[0].title.replace("15", "10")
+
+console.log(deals)
+
+
+
 
 
 
@@ -162,3 +167,6 @@ const newDeal = deal.
 */
 
 //CODE HERE
+
+deals[1].desc = deals[1].desc.replace('march','april').trim
+console.log(deals)

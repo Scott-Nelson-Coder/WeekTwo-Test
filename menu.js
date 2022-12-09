@@ -136,8 +136,8 @@ const foodArr = [
 
 //CODE HERE
 
- const filteredFood = foodArr.filter((elemnet,index) => {
-    return elemnet.tags[0]
+ const filteredFood = foodArr.filter((elemnet) => {
+    return element.
  })
 
  console.log(filteredFood)
