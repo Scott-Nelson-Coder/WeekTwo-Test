@@ -48,8 +48,8 @@ class Employee {
 
 let empOne = new Employee("Jess", "Weekday morning, Weekday afternoons")
 
-// console.log(empOne.name)
-// console.log(empOne.shifts)
+ console.log(empOne.name)
+ console.log(empOne.shifts)
 
 /*
     Call the `getSchedule` method on the
